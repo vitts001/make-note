@@ -1,5 +1,4 @@
  
-console.log("Welcome to notes app. This is app.js");
 showNotes();
 
 // If user adds a note, add it to the localStorage
@@ -15,7 +14,7 @@ addBtn.addEventListener("click", function(e) {
   notesObj.push(addTxt.value);
   localStorage.setItem("notes", JSON.stringify(notesObj));
   addTxt.value = "";
-//   console.log(notesObj);
+
   showNotes();
 });
 
